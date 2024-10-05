@@ -1,0 +1,201 @@
+body {
+    background-image: url(assets/bg1.jpeg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.title p {
+    margin: auto;
+    top: 0;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(0, 0, 0, 0.7);    
+    width: 40%;
+    height: fit-content;
+    padding: 2.5% 0 2.5% 25%;
+    color: white;
+}
+
+.planets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.KELT-3b {
+    background-image: url(assets/KELT-3b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.KELT-3b:hover {
+    animation: scale 10s 1;
+}
+
+.TOI-560c {
+    background-image: url(assets/TOI-560c.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.TOI-560c:hover {
+    animation: scale 10s 1;
+}
+
+.pegasib {
+    background-image: url(assets/51\ Pegasi\ b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.pegasib:hover {
+    animation: scale 10s 1;
+}
+
+.Kepler-22b {
+    background-image: url(assets/Kepler-22b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.Kepler-22b:hover {
+    animation: scale 10s 1;
+}
+
+.Proximab {
+    background-image: url(assets/Proxima\ Centauri\ b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.Proximab:hover {
+    animation: scale 10s 1;
+}
+
+.Proximad {
+    background-image: url(assets/Proxima\ Centauri\ d.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.Proximad:hover {
+    animation: scale 10s 1;
+}
+
+.K2-124 {
+    background-image: url(assets/K2-124\ b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 145px;
+    height: 145px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.K2-124:hover {
+    animation: scale 10s 1;
+}
+
+.Kepler-186f {
+    background-image: url(assets/Kepler-186f.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.Kepler-186f:hover {
+    animation: scale 10s 1;
+}
+
+.HD189733b {
+    background-image: url(assets/HD\ 189733b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    animation: palnets_randomens_1 10s infinite alternate;
+    animation-timing-function: ease;
+    transition: all 2s;
+}
+
+.HD189733b:hover {
+    animation: scale 10s 1;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(3);
+    }
+}
+
+@keyframes palnets_randomens_1 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(40%, 0) rotate(120deg);
+    }
+
+    66% {
+        transform: translate(40%, 40%) rotate(240deg);
+    }
+
+    100% {
+        transform: translate(0, 40%) rotate(360deg);
+    }
+}
+

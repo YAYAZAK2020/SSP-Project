@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+html {
+    font-size: 10px;
+
+    --top_bottom_bgcolor: white;
+    --top_bottom_imp_color: #ffa600;
+    --top_bottom_btn_color: black;
+    --top_bottom_btn_bgcolor: orange;
+    --top_bottom_btn_bgcolor_hover: rgb(184, 119, 0);
+    --bgcolor: black;
+    --color: silver;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--color);
+    font-size: 25px;
+    font-family: "Roboto","Arial",sans-serif;
+    display: block;
+    margin: auto;
+    gap: 20px;
+}
+
+.top_bar {
+    background-color: var(--top_bottom_bgcolor);
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.right {
+    float: right;
+    margin-right: 2.5%;
+    margin-top: 28px;
+    text-align: right;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.left {
+    float: left;
+    margin-left: 2.5%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--top_bottom_imp_color);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    align-items: center;
+    
+}
+
+.logo_only {
+    background-color: transparent;
+    background-image: url(assets/TOI-560c.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--top_buttom_bar_background);
+    width: 50px;
+    height: 50px;
+    padding: 5px 7px 5px 0;
+    margin: 10px 30px 0 0;
+    border-radius: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.top_bar button {
+    background-color: var(--top_bottom_btn_bgcolor);
+    margin: auto auto;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 0;
+    transition: all .6s ease-out;
+}
+
+.top_bar button:hover {
+    background-color: var(--top_bottom_btn_bgcolor_hover);
+    opacity: 0.9;
+    transform: scale(1.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.top_bar a {
+    transition: background-color .2s ease-out;
+    border-radius: 50px;
+}
+
+.top_bar a:hover {
+    background-color: var(--buttons_background_hover);
+    opacity: 0.7;
+    border-radius: 50px;
+}
+
+a {
+   text-decoration: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
+/* main section */
+
+.main {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s;
+  }
+
+.go button {
+    border: 5px solid var(--top_bottom_btn_bgcolor);
+    border-radius: 30px;
+    background-color: var(--top_bottom_btn_bgcolor);
+    box-shadow: 0px 0px 10px 0px var(--top_bottom_btn_bgcolor);
+}
+
+.main button:hover {
+  opacity: 0.9;
+  transform: scale(1.2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .6s;
+}
+
+/* bottom bar section */
+
+.bottom_bar {
+    background-color: var(--top_bottom_bgcolor);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+.important {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--top_bottom_imp_color);
+}
+
+.not_imp {
+    font-size: 2.5rem;
+    color: var(--color);
+}
+
+
